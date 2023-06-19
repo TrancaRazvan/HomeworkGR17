@@ -1,4 +1,4 @@
 package Week4_Assignment_II;
 
-public abstract class Iphone implements Phone{
+public abstract class Iphone {
 }
