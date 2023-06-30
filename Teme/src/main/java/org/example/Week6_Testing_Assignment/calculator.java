@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class calculator {
     public static void main(String[] args) {
+        //123
         System.out.println("Adauga expresia: ");
         Scanner scanner = new Scanner(System.in);
         String expression = scanner.nextLine();
