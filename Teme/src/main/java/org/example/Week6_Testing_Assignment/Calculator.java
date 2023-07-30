@@ -1,10 +1,8 @@
 package org.example.Week6_Testing_Assignment;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
-public class calculator {
+public class Calculator {
     public static void main(String[] args) {
         //123
         System.out.println("Adauga expresia: ");
