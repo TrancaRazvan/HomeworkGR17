@@ -1,10 +1,12 @@
-Aug 04, 2023 3:56:06 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
 INFO: Added student
-Aug 04, 2023 3:56:06 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
 INFO: Added student
-Aug 04, 2023 3:56:06 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
 INFO: Added student
-Aug 04, 2023 3:56:06 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
 INFO: Added student
-Aug 04, 2023 3:56:06 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository addStudent
 INFO: Added student
+Aug 18, 2023 8:57:36 PM org.example.Week9_Exceptions_and_Logging_Assignment.StudentRepository retrieveAllStudentsWithAge
+SEVERE: Age should be positive number.

@@ -14,16 +14,16 @@ import java.util.logging.SimpleFormatter;
 public class StudentRepository {
     private static Logger logger = Logger.getLogger(StudentRepository.class.getName());
 
-    private List<Student> students;
+    public static List<Student> students;
 
     static FileHandler fileHandler = null;
 
-    public StudentRepository() throws IOException {
+    public StudentRepository()  {
         students = new ArrayList<>();
-        setupLogger();
+
     }
 
-    private void setupLogger() throws IOException {
+    static void setupLogger() throws IOException {
         try {
             fileHandler = new FileHandler("Teme/src/main/resources/logger.log");
             fileHandler.setFormatter(new SimpleFormatter());
@@ -40,7 +40,7 @@ public class StudentRepository {
         System.out.println(students.get(students.size()-1));
     }
 
-    public void deleteStudent(String cnp) throws ValidationException {
+    public  void deleteStudent(String cnp) throws ValidationException {
 
         if (cnp.isEmpty()) {
 
@@ -65,16 +65,16 @@ public class StudentRepository {
                 logger.log(Level.SEVERE, "Age should be positive number.");
                 throw new ValidationException("Age should be positive number.");
             }
+
+
             for (Student student : students) {
                 if (calculateDateOfBirth(student) == Integer.parseInt(age)) {
                     listStudens.add(student);
                     System.out.println(student);
                 }
             }
-        } catch (NumberFormatException nfe) {
-            logger.info("info nfe");
-            logger.log(Level.SEVERE, "Age should be a number");
-            System.out.println("Age should be a number");
+        } catch ( NumberFormatException e) {
+            throw new NumberFormatException("Age should be a number");
         }
         return listStudens;
     }

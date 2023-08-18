@@ -1,7 +1,6 @@
 package org.example.Week11;
 
 
-
 public class FestivalStatisticsThread extends Thread {
     FestivalGate gate;
 
@@ -12,9 +11,10 @@ public class FestivalStatisticsThread extends Thread {
 
     @Override
     public synchronized void run() {
-        while (true) {
-            try {
-                sleep(5000);
+        try {
+            sleep(5000);
+            while (true) {
+
                 while (true) {
                     TicketType ticketType = gate.readData();
                     if (ticketType == null) {
@@ -23,9 +23,9 @@ public class FestivalStatisticsThread extends Thread {
                     System.out.println("consumer : " + ticketType);
                 }
 
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
             }
+        } catch (InterruptedException ex) {
+            throw new RuntimeException(ex);
         }
     }
 }

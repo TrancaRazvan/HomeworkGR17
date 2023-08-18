@@ -49,7 +49,7 @@ public class Student {
     }
 
     private void validateGender(String gender) throws ValidationException {
-        if (gender.toUpperCase().equalsIgnoreCase("female") && gender.toUpperCase().equalsIgnoreCase("male")) {
+        if (!gender.equalsIgnoreCase("female") && !gender.equalsIgnoreCase("male")) {
             throw new ValidationException("Gender should be male of female.");
         }
     }
